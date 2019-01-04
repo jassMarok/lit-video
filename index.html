@@ -7,18 +7,15 @@
     <title>Lit-Video🔥</title>
 </head>
 <body>
-    <div id="anotherLitVideo" data-video-url="https://www.youtube.com/embed/gbpdE8n_QWo">This should be another video Element</div>
+    <div id="anotherLitVideo" data-video-url="https://www.youtube.com/embed/gbpdE8n_QWo"></div>
     <br>
-    <div id="anotherVideo" data-video-url="https://www.youtube.com/embed/gbpdE8n_QWo">This should be another video Element</div>
+    <div id="anotherVideo" data-video-url="https://www.youtube.com/embed/gbpdE8n_QWo"></div>
     <!-- Load the Plugin Library Here -->
     <script src="lib/lit_video/LitVideo.js"></script>
     <!-- Plugin Library Ends-->
     <script>
-    // console.log(litVideo.init({target:"#anotherLitVideo", videoId:"8FEh1ZoNmeo"}));
-    // console.log(litVideo.init({target:"#anotherVideo", videoId:"8FEh1ZoNmeo"}));
-    litVideo.init({target:"#anotherLitVideo", height: 400});
-    litVideo.init({target:"#anotherVideo", width:1100});
-    
+    litVideo.init({target:"#anotherLitVideo", height: 400, youtube:true});
+    litVideo.init({target:"#anotherVideo", width:1100, youtube:true});
     </script>
 </body>
 </html>
