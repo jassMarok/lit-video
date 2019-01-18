@@ -6,16 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lit-Video🔥</title>
 </head>
+<style>
+#anotherVideo{
+    width: 40vw;
+    height: 30vw;
+}
+#anotherLitVideo{
+    width: 80vw;
+    height: 45vw;
+}
+</style>
 <body>
-    <div id="anotherLitVideo" data-video-url="https://www.youtube.com/embed/gbpdE8n_QWo"></div>
+    <div id="anotherLitVideo" data-video-url="https://www.youtube.com/watch?v=ww2lWzwbnIg"></div>
     <br>
-    <div id="anotherVideo" data-video-url="https://www.youtube.com/embed/gbpdE8n_QWo"></div>
+    <div id="anotherVideo" data-video-url="https://www.vimeo.com/253719333"></div>
+
+    <div id="test"></div>
+    <div id="vimeotest"></div>
     <!-- Load the Plugin Library Here -->
     <script src="lib/lit_video/LitVideo.js"></script>
     <!-- Plugin Library Ends-->
     <script>
-    litVideo.init({target:"#anotherLitVideo", height: 400, youtube:true});
-    litVideo.init({target:"#anotherVideo", width:1100, youtube:true});
+    litVideo.init("#anotherLitVideo",{youtube:true});
+    litVideo.init("#anotherVideo",{vimeo:true});
     </script>
 </body>
 </html>
